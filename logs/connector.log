@@ -1,0 +1,60 @@
+2026-03-19 23:50:55 [INFO    ] eia.connector - ════════════════════════════════════════════════════════════
+2026-03-19 23:50:55 [INFO    ] eia.connector - EIA Nuclear Outages Pipeline  |  run=20260320T055055Z
+2026-03-19 23:50:55 [INFO    ] eia.connector - Output dir : /Users/ximenaandrade/Documents/TechnicalChallenge/data
+2026-03-19 23:50:55 [INFO    ] eia.connector - Date range : earliest → latest
+2026-03-19 23:50:55 [INFO    ] eia.connector - ════════════════════════════════════════════════════════════
+2026-03-19 23:50:55 [INFO    ] eia.connector - Fetching page 1  (offset=0, length=5000) …
+2026-03-19 23:50:55 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-data/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 1/3)
+2026-03-19 23:50:56 [WARNING ] eia.connector - HTTP 404 on attempt 1/3 – retrying in 2.0s
+2026-03-19 23:50:58 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-data/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 2/3)
+2026-03-19 23:50:58 [WARNING ] eia.connector - HTTP 404 on attempt 2/3 – retrying in 4.0s
+2026-03-19 23:51:02 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-data/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 3/3)
+2026-03-19 23:51:02 [WARNING ] eia.connector - HTTP 404 on attempt 3/3 – retrying in 8.0s
+2026-03-19 23:51:10 [ERROR   ] eia.connector - Failed to fetch page 1: Request failed after 3 attempts. Last error: 404 Client Error: Not Found for url: https://api.eia.gov/v2/nuclear-outages/facility-data/data/?frequency=daily&data%5B0%5D=capacity&data%5B1%5D=outageType&data%5B2%5D=generatorId&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc&length=5000&offset=0&api_key=GPv1ioHtK27AdNrZ1FWtm9NjrmVCzw3YdULeUtg8 – skipping remainder.
+2026-03-19 23:51:10 [INFO    ] eia.connector - Total records retrieved: 0
+2026-03-19 23:51:10 [WARNING ] eia.connector - No data returned by API for the requested parameters.
+2026-03-20 00:03:50 [INFO    ] eia.connector - ════════════════════════════════════════════════════════════
+2026-03-20 00:03:50 [INFO    ] eia.connector - EIA Nuclear Outages Pipeline  |  run=20260320T060350Z
+2026-03-20 00:03:50 [INFO    ] eia.connector - Output dir : /Users/ximenaandrade/Documents/TechnicalChallenge/data
+2026-03-20 00:03:50 [INFO    ] eia.connector - Date range : earliest → latest
+2026-03-20 00:03:50 [INFO    ] eia.connector - ════════════════════════════════════════════════════════════
+2026-03-20 00:03:50 [INFO    ] eia.connector - Fetching page 1  (offset=0, length=5000) …
+2026-03-20 00:03:50 [DEBUG   ] eia.connector - GET /nuclear/outages/csv/outages.csv  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 1/3)
+2026-03-20 00:03:50 [WARNING ] eia.connector - HTTP 404 on attempt 1/3 – retrying in 2.0s
+2026-03-20 00:03:52 [DEBUG   ] eia.connector - GET /nuclear/outages/csv/outages.csv  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 2/3)
+2026-03-20 00:03:52 [WARNING ] eia.connector - HTTP 404 on attempt 2/3 – retrying in 4.0s
+2026-03-20 00:03:56 [DEBUG   ] eia.connector - GET /nuclear/outages/csv/outages.csv  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 3/3)
+2026-03-20 00:03:57 [WARNING ] eia.connector - HTTP 404 on attempt 3/3 – retrying in 8.0s
+2026-03-20 00:04:05 [ERROR   ] eia.connector - Failed to fetch page 1: Request failed after 3 attempts. Last error: 404 Client Error: Not Found for url: https://api.eia.gov/nuclear/outages/csv/outages.csv?frequency=daily&data%5B0%5D=capacity&data%5B1%5D=outageType&data%5B2%5D=generatorId&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc&length=5000&offset=0&api_key=GPv1ioHtK27AdNrZ1FWtm9NjrmVCzw3YdULeUtg8 – skipping remainder.
+2026-03-20 00:04:05 [INFO    ] eia.connector - Total records retrieved: 0
+2026-03-20 00:04:05 [WARNING ] eia.connector - No data returned by API for the requested parameters.
+2026-03-20 00:27:20 [INFO    ] eia.connector - ════════════════════════════════════════════════════════════
+2026-03-20 00:27:20 [INFO    ] eia.connector - EIA Nuclear Outages Pipeline  |  run=20260320T062720Z
+2026-03-20 00:27:20 [INFO    ] eia.connector - Output dir : /Users/ximenaandrade/Documents/TechnicalChallenge/data
+2026-03-20 00:27:20 [INFO    ] eia.connector - Date range : earliest → latest
+2026-03-20 00:27:20 [INFO    ] eia.connector - ════════════════════════════════════════════════════════════
+2026-03-20 00:27:20 [INFO    ] eia.connector - Fetching page 1  (offset=0, length=5000) …
+2026-03-20 00:27:20 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-nuclear-outages/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 1/3)
+2026-03-20 00:27:21 [WARNING ] eia.connector - HTTP 400 on attempt 1/3 – retrying in 2.0s
+2026-03-20 00:27:23 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-nuclear-outages/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 2/3)
+2026-03-20 00:27:23 [WARNING ] eia.connector - HTTP 400 on attempt 2/3 – retrying in 4.0s
+2026-03-20 00:27:27 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-nuclear-outages/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 3/3)
+2026-03-20 00:27:27 [WARNING ] eia.connector - HTTP 400 on attempt 3/3 – retrying in 8.0s
+2026-03-20 00:27:35 [ERROR   ] eia.connector - Failed to fetch page 1: Request failed after 3 attempts. Last error: 400 Client Error: Bad Request for url: https://api.eia.gov/v2/nuclear-outages/facility-nuclear-outages/data/?frequency=daily&data%5B0%5D=capacity&data%5B1%5D=outageType&data%5B2%5D=generatorId&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc&length=5000&offset=0&api_key=GPv1ioHtK27AdNrZ1FWtm9NjrmVCzw3YdULeUtg8 – skipping remainder.
+2026-03-20 00:27:35 [INFO    ] eia.connector - Total records retrieved: 0
+2026-03-20 00:27:35 [WARNING ] eia.connector - No data returned by API for the requested parameters.
+2026-03-20 00:34:54 [INFO    ] eia.connector - ════════════════════════════════════════════════════════════
+2026-03-20 00:34:54 [INFO    ] eia.connector - EIA Nuclear Outages Pipeline  |  run=20260320T063454Z
+2026-03-20 00:34:54 [INFO    ] eia.connector - Output dir : /Users/ximenaandrade/Documents/TechnicalChallenge/data
+2026-03-20 00:34:54 [INFO    ] eia.connector - Date range : earliest → latest
+2026-03-20 00:34:54 [INFO    ] eia.connector - ════════════════════════════════════════════════════════════
+2026-03-20 00:34:54 [INFO    ] eia.connector - Fetching page 1  (offset=0, length=5000) …
+2026-03-20 00:34:54 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-nuclear-outages/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 1/3)
+2026-03-20 00:34:55 [WARNING ] eia.connector - HTTP 400 on attempt 1/3 – retrying in 2.0s
+2026-03-20 00:34:57 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-nuclear-outages/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 2/3)
+2026-03-20 00:34:57 [WARNING ] eia.connector - HTTP 400 on attempt 2/3 – retrying in 4.0s
+2026-03-20 00:35:01 [DEBUG   ] eia.connector - GET /nuclear-outages/facility-nuclear-outages/data/  params={'frequency': 'daily', 'data[0]': 'capacity', 'data[1]': 'outageType', 'data[2]': 'generatorId', 'sort[0][column]': 'period', 'sort[0][direction]': 'asc', 'length': 5000, 'offset': 0}  (attempt 3/3)
+2026-03-20 00:35:01 [WARNING ] eia.connector - HTTP 400 on attempt 3/3 – retrying in 8.0s
+2026-03-20 00:35:09 [ERROR   ] eia.connector - Failed to fetch page 1: Request failed after 3 attempts. Last error: 400 Client Error: Bad Request for url: https://api.eia.gov/v2/nuclear-outages/facility-nuclear-outages/data/?frequency=daily&data%5B0%5D=capacity&data%5B1%5D=outageType&data%5B2%5D=generatorId&sort%5B0%5D%5Bcolumn%5D=period&sort%5B0%5D%5Bdirection%5D=asc&length=5000&offset=0&api_key=GPv1ioHtK27AdNrZ1FWtm9NjrmVCzw3YdULeUtg8 – skipping remainder.
+2026-03-20 00:35:09 [INFO    ] eia.connector - Total records retrieved: 0
+2026-03-20 00:35:09 [WARNING ] eia.connector - No data returned by API for the requested parameters.
